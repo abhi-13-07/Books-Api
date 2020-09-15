@@ -1,0 +1,30 @@
+GET http://localhost:3000/books
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "New Book",
+  "author": "New Author",
+  "edition": "1st edition"
+}
+
+###
+GET http://localhost:3000/books/author/new-author
+
+###
+GET http://localhost:3000/books/5f60fb0dcb45cc0f04686207
+
+###
+PATCH http://localhost:3000/books/5f6102f7e7b7451bd83aa271
+Content-Type: application/json
+
+{
+  "edition": "1nd edition"
+}
+
+###
+
+DELETE http://localhost:3000/books/5f610a8483d7ad2ad085cf57
